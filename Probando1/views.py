@@ -3,3 +3,6 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'home.html')
+
+def ventas(request):
+    return render(request, 'ventas.html')
