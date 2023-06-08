@@ -6,3 +6,6 @@ def home(request):
 
 def ventas(request):
     return render(request, 'ventas.html')
+
+def catalogo(request):
+    return render(request, 'catalogo.html')
