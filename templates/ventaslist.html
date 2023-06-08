@@ -15,6 +15,7 @@
         <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
         <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
         <meta name="theme-color" content="#7952b3">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
     <body>
       <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -79,8 +80,8 @@
         <h1 class="visually-hidden">Ejemplos de Sidebars</h1>
 <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
-<span class="fs-4">Sidebar</span>
+
+<span class="fs-4">Aserradero LM</span>
 </a>
 <hr>
 <ul class="nav nav-pills flex-column mb-auto">
@@ -90,6 +91,12 @@
 Ventas
 </a>
 </li>
+<li>
+  <a href="catalogo.html" class="nav-link text-white">
+      <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+      Catalogo
+      </a>
+      </li>
 <li>
 <a href="#" class="nav-link text-white">
 <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
@@ -109,12 +116,8 @@ Historial
 </a>
 </li>
 <li>
-  
+
 </li>
-
-
-
-
 </ul>
 <hr>
 <div class="dropdown">
@@ -131,26 +134,66 @@ Historial
 </div>
 </div>
 <div class="b-example-divider"></div>
-<!--DataTable-->
- 
- <link rel= "https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.css"></link>
- <!--Jquery-->
-<scripts src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></scripts>
 
-<!--DATATABLES--> 
-<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
- <script src=" https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+<div class="alert alert-dark display-5"><strong>Ventas</strong></div>
 
-<!--Custom JS-->
- <script src="{% static 'js/tablas.js'%}"></script> 
-<div class="container my-4">
-  <div class= "row">
-    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      <table class="table">
-        <thead>
 
-        </thead>
-      </table>
+<table class="table table-bordered table-dark">
+  <thead class="thead-dark">
+    <tr>
+      <th>Codigo</th>
+      <th>Estado pedido</th>
+      <th>Fecha ingreso</th>
+      <th>Descripcion</th>
+      <th>Valor</th>
+      <th>Cliente</th>
+      <th>Entrega</th>
+      <th>Opciones</th>
+  </tr>
+</thead>
+        <tbody>
+          <tr>
+            <td>Codigo</td>
+            <td>Estado</td>
+            <td>Fecha</td>
+            <td>Descripcion</td>
+            <td>Valor</td>
+            <td>Cliente</td>
+            <td>Entrega</td>
+            <td> <div class="col">
+              <a href="" class="btn btn-info btn-sm"><i class="bi bi-pencil"></i>
+              <a></a>
+              <a href="" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
+              </td>
+          </tr>
+         
+
+      </tbody>
+
+
+
+        
         
     </body>
 </html>
+<!--DataTable-->
+ 
+<!--<link rel= "https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.css"></link>
+<!--Jquery-->
+<!--<scripts src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></scripts>
+
+<!--DATATABLES--> 
+<!--<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src=" https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+<!--Custom JS-->
+<!--<script src="{% static 'js/tablas.js'%}"></script> 
+<div class="container my-4">
+ <div class= "row">
+   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+     <table class="table">
+       <thead>
+
+       </thead>
+     </table>
+     -->
