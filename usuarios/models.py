@@ -1,22 +1,21 @@
 from django.db import models
 
 # Create your models here.
-
-class Usuario(models.Model):
+class Usuario(models.Model): 
     
-    genero_eleccion = (
-        ('M','Masculino'),
-        ('F','Femenino'),
-    )
+    idUsuario = models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')
+    rutC = models.CharField(max_length=12, null=False)
+    nombre = models.CharField(max_length=100, null=False, unique=True )
+    apellidoPaterno = models.CharField(max_length=45, null=False)
+    correo = models.CharField(max_length=255, null=False)
+    contraseña = models.CharField(max_length=50, null=False)
     
     
+    def todo(self):
+        return Usuario
     
-    codigo = models.IntegerField()
-    photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
-    nombre = models.CharField(max_length=100)
-    profesion = models.CharField(max_length=100)
-    genero = models.CharField(choices=genero_eleccion, max_length=100)
-    ciudad = models.CharField(max_length=100)
     
-    def __str__(self):
-        return self.nombre
+class Empleado(models.Model):
+    idEmpleado = models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='Codigo Empleado')
+    correo = models.CharField(max_length=50, null=False)
+    contraseña = models.CharField(max_length=8)
